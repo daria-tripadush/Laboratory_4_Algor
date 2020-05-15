@@ -94,12 +94,14 @@ int exerciceOne() {
 int exerciceOTwoA() {
 	
 	long long int multiplication = 0;
-	
+	int k = 0;
 	for(int i = 1 ; i <= 100; i++) {
 		if((i%2) == 0) {
 			multiplication += i; 
+			k++;
 		}
 	}
+	multiplication = multiplication / k;
 	printf("%d\n", multiplication);
 	return 0;
 }
@@ -109,15 +111,16 @@ int exerciceTwoB() {
 
 	long long int multiplication = 0;
 
-	int i = 1;
+	int i = 1,k = 0;
 	while(i<=100) {
 		
 		if((i%2) == 0) {
 			multiplication += i; 
-			
+			k++;
 		}
 		i++;
 	}
+	multiplication = multiplication / k;
 	printf("%d\n", multiplication);
 	return 0;
 }
@@ -128,13 +131,15 @@ int exerciceTwoC() {
 	long long int multiplication = 0;
 	
 	
-	int i = 1;
+	int i = 1,k=0;
 	do {
 		if (i % 2 == 0 ) {
 			multiplication += i;
+			k++;
 		}
 		i++;
 	} while (i <= 100);
+	multiplication = multiplication / k;
 	printf("%d\n", multiplication);
 
 }
